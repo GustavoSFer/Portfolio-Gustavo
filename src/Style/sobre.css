@@ -1,0 +1,5 @@
+@media only screen and ( max-width: 380px ) {
+  .font-text {
+    font-size: 12px;
+  }
+}

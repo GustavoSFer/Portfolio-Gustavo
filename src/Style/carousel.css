@@ -9,7 +9,8 @@
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
-  margin: 40px 80px;
+  margin: 30px 10px;
+  width: 92.6%;
 }
 
 .container .carousel::-webkit-scrollbar {
@@ -78,8 +79,8 @@
 
 @media only screen and ( max-width : 750px ) {
   .container .carousel .item {
-    width: 250px;
-    height: 500px;
+    width: 90%;
+    height: 90%;
   }
   .image {
     height: 150px;

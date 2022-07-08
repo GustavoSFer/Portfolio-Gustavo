@@ -1,9 +1,8 @@
 import React, { useContext, useRef } from 'react';
 import myContext from '../ContextAPI/MyContext';
-import '../Style/carousel.css';
 
 function CarroselItem() {
-  const data = useContext(myContext);
+  const { data } = useContext(myContext);
   const carousel = useRef(null);
 
   const handleLeftClick = (e) => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import datainfo from '../Projects.json';
+import datainfo from '../BancoDeDados/Projects.json';
 import myContext from './MyContext';
 
 function ProviderPortfolio({ children }) {
@@ -10,7 +10,9 @@ function ProviderPortfolio({ children }) {
     setData(datainfo);
   }, []);
 
-  const context = data;
+  const context = React.useMemo(() => ({
+    data,
+  }), [data]);
 
   return (
     <myContext.Provider value={context}>
@@ -20,7 +22,7 @@ function ProviderPortfolio({ children }) {
 }
 
 ProviderPortfolio.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default ProviderPortfolio;

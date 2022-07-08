@@ -1,9 +1,12 @@
+import ProviderPortfolio from "./ContextAPI/ProviderPortfolio";
 import Rotas from "./Routes";
 
 function App() {
   return (
     <div>
-      <Rotas />
+      <ProviderPortfolio>
+        <Rotas />
+      </ProviderPortfolio>
     </div>
   );
 }

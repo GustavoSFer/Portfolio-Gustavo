@@ -4,7 +4,7 @@ import '../Style/sobre.css';
 
 function Sobre() {
   return (
-    <div className="row bg-dark p-3 pt-5 width-pg" id="Sobre">
+    <div className="row bg-dark p-3 pt-5 width-pg text-white" id="Sobre">
       <div className="col-sm-6 text-color pt-5 mb-5">
         <div className="text-center mb-4 font-text pt-5">
           <h1 className="pt-5">Olá, eu sou o Gustavo.</h1>

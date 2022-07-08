@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import datainfo from '../BancoDeDados/Projects.json';
+import datainfo from '../BancoDeDados/Projects';
 import myContext from './MyContext';
 
 function ProviderPortfolio({ children }) {
